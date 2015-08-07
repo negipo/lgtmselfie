@@ -27,4 +27,4 @@ for my $frame (1..3) {
 my $result = "$dir/out.gif";
 
 system "convert @{[ join(' ', @shots) ]} -resize 400x400 -loop 0 -delay 5 -coalesce $result";
-system "impbocopy $result";
+system "impbcopy $result";
